@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <title>سانت‌مونیکا مکانیک</title>
+  <link rel="stylesheet" href="style/mechanic.css" />
+</head>
+<body>
+
+  <!-- زبان -->
+  <div class="lang-selector">
+    <select id="lang-select"></select>
+  </div>
+
+  <div class="frame-container">
+    <div class="device-wrapper">
+      <div class="screen-content">
+
+        <!-- تب‌ها -->
+        <nav class="tab-bar">
+          <button class="tab-btn active" data-tab="engine"     data-i18n="tab.engine">Engine</button>
+          <button class="tab-btn"       data-tab="brakes"     data-i18n="tab.brakes">Brakes</button>
+          <button class="tab-btn"       data-tab="tires"      data-i18n="tab.tires">Tires</button>
+          <button class="tab-btn"       data-tab="electrical" data-i18n="tab.electrical">Electrical</button>
+          <button class="tab-btn"       data-tab="body"       data-i18n="tab.body">Body</button>
+          <button class="tab-btn"       data-tab="tuning"     data-i18n="tab.tuning">Tuning</button>
+          <button class="tab-btn"       data-tab="inspection" data-i18n="tab.inspection">Inspection</button>
+          <button class="tab-btn"       data-tab="inventory"  data-i18n="tab.inventory">Inventory</button>
+          <button class="tab-btn"       data-tab="invoice"    data-i18n="tab.invoice">Invoice</button>
+          <button class="tab-btn"       data-tab="job"        data-i18n="tab.job">Job</button>
+        </nav>
+
+        <!-- محتوا -->
+        <div class="tab-content">
+          <section id="engine"     class="panel"></section>
+          <section id="brakes"     class="panel hidden"></section>
+          <section id="tires"      class="panel hidden"></section>
+          <section id="electrical" class="panel hidden"></section>
+          <section id="body"       class="panel hidden"></section>
+          <section id="tuning"     class="panel hidden"></section>
+          <section id="inspection" class="panel hidden"></section>
+          <section id="inventory"  class="panel hidden"></section>
+          <section id="invoice"    class="panel hidden"></section>
+          <section id="job"        class="panel hidden"></section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- دسکتاپ -->
+  <script src="script/desktop.js"></script>
+  <script src="script/minigame.js"></script>
+  <script type="module" src="script/mechanic.js"></script>
+</body>
+</html>
+</html>
